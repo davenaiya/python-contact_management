@@ -27,7 +27,7 @@ contact management system/
 4. Update the password in `.env`:
 
 ```env
-DATABASE_URL=mysql+pymysql://root:your_password@localhost:3306/contact_manager
+DATABASE_URL=mysql+pymysql://root:your_password@localhost:3306/namedatabse
 ```
 
 If the password contains special characters, URL-encode them.
@@ -35,7 +35,6 @@ If the password contains special characters, URL-encode them.
 ## Run the backend
 
 ```powershell
-cd "C:\python\contact management system\backend"
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -49,7 +48,7 @@ The API runs at `http://127.0.0.1:8000`. Swagger documentation is at `http://127
 Open a second terminal:
 
 ```powershell
-cd "C:\python\contact management system\frontend"
+
 npm install
 npm run dev
 ```
@@ -66,6 +65,22 @@ Open the local URL shown by Vite, normally `http://localhost:5173`.
 | GET | `/contacts/{id}` | Get one contact |
 | PUT | `/contacts/{id}` | Update a contact |
 | DELETE | `/contacts/{id}` | Delete a contact |
+
+
+## Screenshots
+
+### Contact List
+
+![Contact List](screenshots/contacts.png)
+
+### Add Contact
+
+![Add Contact](screenshots/Add-contact.png)
+
+
+### Dashboard
+
+![Dashboard](screenshots/Dashboard.png)
 
 ## Example contact JSON
 
