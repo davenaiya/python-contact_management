@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Node.js
+node_modules/
+dist/
+.dist/
+
+# Other local files
+*.log
+.DS_Store
